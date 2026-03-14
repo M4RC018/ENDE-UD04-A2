@@ -36,15 +36,15 @@ public abstract class Figura {
         this.color = color;
     }
 
-    public abstract double perímetro();
+    public abstract double calcularPerimetro();
 
-    public abstract double área();
+    public abstract double calcularArea();
 
     public int esMayorQue(Figura otraFigura) {
         int codigo;
-        if (this.área() > otraFigura.área()) {
+        if (this.calcularArea() > otraFigura.calcularArea()) {
             codigo = 1;
-        } else if (this.área() < otraFigura.área()) {
+        } else if (this.calcularArea() < otraFigura.calcularArea()) {
             codigo = -1;
         } else {
             codigo = 0;
